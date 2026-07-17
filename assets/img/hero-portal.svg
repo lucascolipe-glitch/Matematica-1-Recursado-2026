@@ -4,6 +4,11 @@
 <rect width="100%" height="100%" rx="44" fill="url(#bg)"/>
 <g filter="url(#s)"><rect x="75" y="80" width="750" height="455" rx="34" fill="#fff" stroke="#bfd2ea" stroke-width="3"/></g>
 <path d="M170 402H730" stroke="#17365f" stroke-width="6" stroke-linecap="round"/>
-<g fill="#1f4e8c"><circle cx="250" cy="402" r="18"/><circle cx="450" cy="402" r="18"/><circle cx="650" cy="402" r="18"/></g>
-<g font-family="Arial, sans-serif" text-anchor="middle"><text x="250" y="340" font-size="72" fill="#1f4e8c">ℝ</text><text x="450" y="340" font-size="72" fill="#147d64">=</text><text x="650" y="340" font-size="72" fill="#6d4fc2">|x|</text><text x="450" y="155" font-size="30" font-weight="700" fill="#17365f">Tres recorridos · una misma recta</text><text x="250" y="460" font-size="22" fill="#536273">Números</text><text x="450" y="460" font-size="22" fill="#536273">Ecuaciones</text><text x="650" y="460" font-size="22" fill="#536273">Inecuaciones</text></g>
+<g fill="#1f4e8c"><circle cx="250" cy="402" r="18"/>
+  <circle cx="450" cy="402" r="18"/><circle cx="650" cy="402" r="18"/>
+</g>
+<g font-family="Arial, sans-serif" text-anchor="middle">
+  <text x="250" y="340" font-size="72" fill="#1f4e8c">ℝ</text>
+  <text x="450" y="340" font-size="72" fill="#147d64">=</text>
+  <text x="650" y="340" font-size="72" fill="#6d4fc2">|x|≥2</text><text x="450" y="155" font-size="30" font-weight="700" fill="#17365f">Tres recorridos · una misma recta</text><text x="250" y="460" font-size="22" fill="#536273">Números</text><text x="450" y="460" font-size="22" fill="#536273">Ecuaciones</text><text x="650" y="460" font-size="22" fill="#536273">Inecuaciones</text></g>
 </svg>
