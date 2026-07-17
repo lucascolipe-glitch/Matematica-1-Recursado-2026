@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:11.075
+Antes de operar, identificamos dónde la expresión está definida.
+
+2
+00:00:11.075 --> 00:00:24.571
+Condición inicial: x ≠ 1.
+
+3
+00:00:24.571 --> 00:00:37.858
+La simplificación es válida bajo la condición x ≠ 1.
+
+4
+00:00:37.858 --> 00:00:48.274
+La ecuación simplificada tiene solución x = −1.
+
+5
+00:00:48.274 --> 00:01:00.059
+La solución es Sol = {−1}.
+
+6
+00:01:00.059 --> 00:01:12.996
+Las condiciones iniciales deben conservarse hasta el final.

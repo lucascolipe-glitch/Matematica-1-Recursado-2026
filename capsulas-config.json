@@ -1,0 +1,764 @@
+{
+  "reales": {
+    "titulo": "Habitar la recta real",
+    "subtitulo": "Conjuntos, propiedades y operaciones para leer antes de calcular",
+    "etiqueta": "Cápsula 1 · Números reales",
+    "intro": "Un recorrido de microaprendizaje para clasificar números, justificar propiedades, elegir una escala y conectar potenciación, radicación y logaritmos antes de resolver el Trabajo Práctico.",
+    "pregunta": "¿Qué decisiones conviene tomar antes de empezar una cuenta con números reales?",
+    "hero": "hero-reales.svg",
+    "objetivos": [
+      [
+        "Clasificar",
+        "Reconocer la inclusión entre naturales, enteros, racionales, irracionales y reales."
+      ],
+      [
+        "Justificar",
+        "Distinguir una propiedad válida de una afirmación que exige un contraejemplo."
+      ],
+      [
+        "Representar",
+        "Elegir escalas, ubicar puntos y leer distancias en la recta real."
+      ],
+      [
+        "Operar",
+        "Aplicar propiedades de potencia, raíz y logaritmo respetando condiciones y prioridades."
+      ]
+    ],
+    "frase": "Antes de operar, preguntate: ¿en qué conjunto estoy, qué operación está definida y qué propiedad puedo usar?",
+    "mapa_intro": "Los cuatro nodos pueden recorrerse en cualquier orden. El taller integra los procedimientos del Trabajo Práctico y el progreso se guarda en este dispositivo.",
+    "nodes": [
+      {
+        "id": "r-conjuntos",
+        "num": "01",
+        "icon": "ℝ",
+        "title": "Familias que se amplían",
+        "question": "¿Qué problema resuelve cada ampliación del sistema numérico?",
+        "chips": [
+          "ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ",
+          "irracionales",
+          "clausura"
+        ],
+        "summary": "Los materiales presentan los números reales como la unión de racionales e irracionales. La inclusión entre conjuntos permite dar la clasificación más específica sin olvidar que un mismo número puede pertenecer a varios conjuntos.",
+        "concepts": [
+          [
+            "Naturales y enteros",
+            "En la convención usada por la cátedra, ℕ = {1, 2, 3, …}. Los enteros incorporan el cero y los opuestos de los naturales."
+          ],
+          [
+            "Racionales",
+            "Son cocientes a/b con a y b enteros y b ≠ 0. Incluyen enteros, decimales finitos y decimales periódicos."
+          ],
+          [
+            "Irracionales y reales",
+            "Los irracionales no pueden escribirse como cociente de enteros; su desarrollo decimal es infinito no periódico. Racionales e irracionales completan ℝ."
+          ],
+          [
+            "Operación cerrada",
+            "Una operación es cerrada en un conjunto cuando al operar dos elementos del conjunto, el resultado permanece en él. Un contraejemplo alcanza para refutar una afirmación universal."
+          ]
+        ],
+        "example_title": "Lectura guiada",
+        "example": "√9 = 3. El número 3 pertenece a ℕ, por lo tanto también pertenece a ℤ, ℚ y ℝ. La clasificación más específica es “natural”.",
+        "micro": {
+          "q": "¿Cuál es el conjunto más pequeño al que pertenece −5?",
+          "opts": [
+            "ℕ",
+            "ℤ",
+            "ℚ",
+            "ℝ"
+          ],
+          "correct": 1,
+          "good": "Exacto. −5 es entero; además es racional y real, pero la clasificación más específica es ℤ.",
+          "bad": "Revisá la inclusión entre conjuntos: los enteros incluyen los naturales, sus opuestos y el cero."
+        }
+      },
+      {
+        "id": "r-recta",
+        "num": "02",
+        "icon": "↔",
+        "title": "Recta, orden y propiedades",
+        "question": "¿Cómo se conectan una expresión, un punto y una distancia?",
+        "chips": [
+          "recta real",
+          "escala",
+          "11 propiedades"
+        ],
+        "summary": "Cada número real se corresponde con un único punto de la recta. Las propiedades de suma y producto permiten transformar expresiones y justifican procedimientos que no deberían quedar reducidos a reglas mecánicas.",
+        "concepts": [
+          [
+            "Recta real",
+            "Elegir el 0 y el 1 fija la escala. A partir de allí, cada real ocupa una posición y permite comparar, ordenar y medir desplazamientos."
+          ],
+          [
+            "Propiedades",
+            "Clausura, asociatividad, conmutatividad, elementos neutros, opuestos, inversos multiplicativos y distributividad organizan las operaciones en ℝ."
+          ],
+          [
+            "Opuesto e inverso",
+            "Todo real a tiene opuesto −a. Todo real distinto de cero tiene inverso multiplicativo 1/a."
+          ],
+          [
+            "Verdadero o falso",
+            "Para afirmar que una propiedad vale para todos los reales hay que justificarla; para mostrar que es falsa, alcanza un caso donde falle."
+          ]
+        ],
+        "example_title": "Aplicación ambiental de la recta",
+        "example": "El apunte propone marcar 0, 25 y 75 μg/m³ y resaltar el rango de 0 a 35 μg/m³. La escala elegida debe permitir comparar con claridad el valor medido y el rango indicado.",
+        "micro": {
+          "q": "“La división es cerrada en ℕ”. ¿Qué decisión es correcta?",
+          "opts": [
+            "Es verdadera por clausura",
+            "Es falsa: 1 ÷ 2 no es natural",
+            "Es falsa porque no existe 2 ÷ 1"
+          ],
+          "correct": 1,
+          "good": "Bien. Dos naturales pueden producir un cociente que no es natural; 1 ÷ 2 funciona como contraejemplo.",
+          "bad": "Una afirmación de clausura debe funcionar para todos los pares. Buscá un cociente de naturales que salga de ℕ."
+        }
+      },
+      {
+        "id": "r-potencias",
+        "num": "03",
+        "icon": "aⁿ",
+        "title": "Potencias, raíces y exponentes fraccionarios",
+        "question": "¿Cuándo dos escrituras distintas describen la misma operación?",
+        "chips": [
+          "exponentes enteros",
+          "radicación",
+          "aⁿᐟᵐ"
+        ],
+        "summary": "La potencia se extiende a exponentes enteros mediante el inverso multiplicativo. La radicación depende de la paridad del índice y las potencias de exponente fraccionario conectan ambas operaciones.",
+        "concepts": [
+          [
+            "Potenciación",
+            "Para n natural, aⁿ es el producto de n factores iguales. Para a ≠ 0, a⁰ = 1 y a⁻ⁿ = 1/aⁿ."
+          ],
+          [
+            "Propiedades",
+            "Producto y cociente de potencias de igual base, potencia de potencia y distribución sobre producto o cociente."
+          ],
+          [
+            "Radicación",
+            "Con índice par, el radicando debe ser no negativo y se toma la raíz principal. Con índice impar, el radicando puede ser cualquier real."
+          ],
+          [
+            "Exponente fraccionario",
+            "Para a positivo, aⁿᐟᵐ = ᵐ√(aⁿ). Esta equivalencia permite cambiar de registro según convenga."
+          ]
+        ],
+        "example_title": "Una alerta conceptual",
+        "example": "√(x²) no es siempre x. Como la raíz cuadrada principal es no negativa, √(x²) = |x|. Por ejemplo, si x = −3, √(x²) = 3.",
+        "micro": {
+          "q": "¿Cuál es el valor de (1/2)⁻²?",
+          "opts": [
+            "1/4",
+            "4",
+            "−4"
+          ],
+          "correct": 1,
+          "good": "Correcto. El exponente negativo invierte la base: (1/2)⁻² = 2² = 4.",
+          "bad": "Primero aplicá el inverso multiplicativo y después elevá al cuadrado."
+        }
+      },
+      {
+        "id": "r-logaritmos",
+        "num": "04",
+        "icon": "log",
+        "title": "Logaritmos y ejercicios combinados",
+        "question": "¿Qué exponente está escondido en un logaritmo?",
+        "chips": [
+          "definición",
+          "propiedades",
+          "prioridades"
+        ],
+        "summary": "El logaritmo responde qué exponente debe tener una base para obtener un argumento. Sus propiedades simplifican productos, cocientes y potencias, pero no convierten sumas en sumas de logaritmos.",
+        "concepts": [
+          [
+            "Definición",
+            "logₐ(c) = b si y solo si aᵇ = c, con a > 0, a ≠ 1 y c > 0."
+          ],
+          [
+            "Propiedades",
+            "El logaritmo de un producto es suma; el de un cociente es resta; el exponente del argumento puede pasar como factor."
+          ],
+          [
+            "Cambio de base",
+            "logₐ(b) = log_c(b) / log_c(a), útil cuando la calculadora no permite indicar la base."
+          ],
+          [
+            "Orden de cálculo",
+            "Paréntesis; potencias y raíces; productos y cocientes; sumas y restas. Identificar la propiedad antes de operar reduce errores."
+          ]
+        ],
+        "example_title": "Propiedad que no existe",
+        "example": "No se puede transformar logₐ(b + c) en logₐ(b) + logₐ(c). Las propiedades listadas en los materiales se aplican a producto, cociente y potencia.",
+        "micro": {
+          "q": "Si log₅(1/25) = b, ¿cuánto vale b?",
+          "opts": [
+            "2",
+            "−2",
+            "1/2"
+          ],
+          "correct": 1,
+          "good": "Exacto. 5⁻² = 1/25, por eso el logaritmo vale −2.",
+          "bad": "Volvé a la definición: buscá el exponente que transforma 5 en 1/25."
+        }
+      }
+    ],
+    "map_svg": "mapa-reales.svg",
+    "local_video": "01_reales_potencias_raices_logaritmos.mp4",
+    "vtt": "01_reales.vtt",
+    "local_video_title": "Potencia, raíz y logaritmo: tres preguntas sobre 8",
+    "local_video_desc": "Microvideo creado para mostrar que 2³ = 8, ∛8 = 2 y log₂(8) = 3 son tres lecturas de una misma relación.",
+    "originals": [],
+    "pause_questions": [
+      "¿Qué condición debería revisar antes de aplicar una propiedad?",
+      "¿Podrías justificar el paso sin decir “pasa para el otro lado”?",
+      "¿Qué conjunto numérico contiene el resultado y cuál es el más específico?",
+      "¿La notación elegida ayuda a ver la estructura de la cuenta?"
+    ],
+    "sources": [
+      "Morari, Colipe. Conjuntos Numéricos - Números Reales. Matemática 1, FaCiAS, UNCo, 2025.",
+      "Lucas. Presentación de la primera semana: números reales y logaritmos, Matemática 1, FaCiAS, UNCo, 2025.",
+      "Resumen y Ejemplos - Reales. Apunte para el taller, Matemática 1, FaCiAS, UNCo, 2024.",
+      "Trabajo Práctico: Números Reales, Matemática 1, FaCiAS, UNCo, primer cuatrimestre 2024.",
+      "Soluciones del Trabajo Práctico de Reales, Matemática 1, FaCiAS, UNCo, segundo cuatrimestre 2023."
+    ],
+    "documents": [
+      [
+        "Teoría completa",
+        "../assets/documentos/teoria_reales.pdf"
+      ],
+      [
+        "Presentación: números reales",
+        "../assets/documentos/presentacion_reales.pdf"
+      ],
+      [
+        "Resumen para el taller",
+        "../assets/documentos/resumen_taller.pdf"
+      ],
+      [
+        "Trabajo práctico",
+        "../assets/documentos/trabajo_practico_reales.pdf"
+      ],
+      [
+        "Resoluciones 2023",
+        "../assets/documentos/resoluciones_tp_2023.pdf"
+      ]
+    ]
+  },
+  "ecuaciones": {
+    "titulo": "Equilibrar sin perder soluciones",
+    "subtitulo": "Ecuaciones equivalentes, condiciones iniciales y decisiones de resolución",
+    "etiqueta": "Cápsula 2 · Ecuaciones",
+    "intro": "Una experiencia no lineal para interpretar la igualdad, sostener la equivalencia, reconocer distintos conjuntos solución y controlar las restricciones de expresiones racionales, radicales y logarítmicas.",
+    "pregunta": "¿Cómo transformar una ecuación sin cambiar —ni ampliar por error— su conjunto solución?",
+    "hero": "hero-ecuaciones.svg",
+    "objetivos": [
+      [
+        "Interpretar",
+        "Reconocer miembros, incógnita, igualdad y conjunto solución."
+      ],
+      [
+        "Transformar",
+        "Usar uniformidad, distributividad, factorización y fórmulas con sentido."
+      ],
+      [
+        "Restringir",
+        "Determinar condiciones iniciales antes de operar."
+      ],
+      [
+        "Verificar",
+        "Comparar las soluciones obtenidas con la ecuación original y sus restricciones."
+      ]
+    ],
+    "frase": "Resolver no es mover términos: es construir una cadena de ecuaciones equivalentes y verificar el resultado.",
+    "mapa_intro": "Podés comenzar por el significado de solución, por las transformaciones, por las condiciones iniciales o por las aplicaciones y expresiones racionales.",
+    "nodes": [
+      {
+        "id": "e-significado",
+        "num": "01",
+        "icon": "=",
+        "title": "Qué significa resolver",
+        "question": "¿Cuándo dos ecuaciones dicen exactamente lo mismo?",
+        "chips": [
+          "igualdad",
+          "equivalencia",
+          "conjunto solución"
+        ],
+        "summary": "Una ecuación establece una igualdad entre dos expresiones. Resolverla significa encontrar los valores que la vuelven verdadera. Dos ecuaciones son equivalentes cuando tienen el mismo conjunto solución.",
+        "concepts": [
+          [
+            "Componentes",
+            "Miembro izquierdo, signo igual y miembro derecho. La incógnita representa un valor por determinar."
+          ],
+          [
+            "Solución",
+            "Puede haber una solución, varias, ninguna o todos los reales. Se representa mediante un conjunto Sol."
+          ],
+          [
+            "Equivalencia",
+            "El objetivo es pasar a expresiones más simples sin cambiar el conjunto solución."
+          ],
+          [
+            "Tipos",
+            "Los materiales incluyen ecuaciones lineales, cuadráticas, logarítmicas, racionales y con valor absoluto."
+          ]
+        ],
+        "example_title": "Tres posibles finales",
+        "example": "Una igualdad falsa produce Sol = ∅; una igualdad verdadera independiente de x produce Sol = ℝ, salvo las condiciones iniciales; una igualdad que determina x produce un conjunto finito de soluciones.",
+        "micro": {
+          "q": "¿Por qué 2x + 1 = 0 y 4x + 2 = 0 son equivalentes?",
+          "opts": [
+            "Porque se parecen",
+            "Porque ambas tienen solución x = −1/2",
+            "Porque ambas tienen coeficientes pares"
+          ],
+          "correct": 1,
+          "good": "Exacto. La equivalencia se decide por el conjunto solución, no por la apariencia de las expresiones.",
+          "bad": "Resolvé brevemente cada ecuación y compará sus conjuntos solución."
+        }
+      },
+      {
+        "id": "e-uniformidad",
+        "num": "02",
+        "icon": "⚖",
+        "title": "Uniformidad y métodos",
+        "question": "¿Qué operaciones conservan el equilibrio de la igualdad?",
+        "chips": [
+          "suma",
+          "producto",
+          "factorización"
+        ],
+        "summary": "La uniformidad indica que una operación aplicada a un miembro debe aplicarse también al otro. Junto con la distributiva, el aislamiento de términos, la factorización y las fórmulas, permite construir ecuaciones equivalentes.",
+        "concepts": [
+          [
+            "Uniformidad de la suma",
+            "Si a = b, entonces a + c = b + c. Sumar el opuesto ayuda a aislar términos."
+          ],
+          [
+            "Uniformidad del producto",
+            "Si a = b, entonces ac = bc. Para deshacer un producto conviene multiplicar por un inverso no nulo."
+          ],
+          [
+            "Relación de igualdad",
+            "Reflexividad, simetría y transitividad permiten justificar cadenas de igualdades."
+          ],
+          [
+            "Métodos",
+            "Distributiva, agrupamiento, mínimo común múltiplo, producto cero, factorización y fórmula cuadrática, según la estructura."
+          ]
+        ],
+        "example_title": "Evitar el “pasa restando”",
+        "example": "De 3x − 4 = 2 se suma 4 a ambos miembros: 3x = 6. Luego se multiplica por 1/3 en ambos miembros: x = 2. Cada paso muestra la propiedad aplicada.",
+        "micro": {
+          "q": "En −2(x − (5 − 4x)) + 4 = −3x, ¿cuál es la solución?",
+          "opts": [
+            "x = −2",
+            "x = 2",
+            "x = 14"
+          ],
+          "correct": 1,
+          "good": "Bien. Al suprimir paréntesis y agrupar resulta −10x + 14 = −3x, por lo tanto x = 2.",
+          "bad": "Primero resolvé el paréntesis interior, después aplicá distributiva y agrupá términos semejantes."
+        }
+      },
+      {
+        "id": "e-condiciones",
+        "num": "03",
+        "icon": "CI",
+        "title": "Condiciones iniciales",
+        "question": "¿Qué valores deben excluirse antes de empezar?",
+        "chips": [
+          "denominadores",
+          "logaritmos",
+          "raíces pares"
+        ],
+        "summary": "Las condiciones iniciales delimitan los valores para los que la ecuación está definida. Deben establecerse antes de operar y revisarse al final, porque una solución algebraica puede quedar excluida.",
+        "concepts": [
+          [
+            "Expresiones racionales",
+            "Cada denominador debe ser distinto de cero."
+          ],
+          [
+            "Logaritmos",
+            "Cada argumento debe ser estrictamente positivo."
+          ],
+          [
+            "Radicales pares",
+            "El radicando debe ser mayor o igual que cero."
+          ],
+          [
+            "Verificación",
+            "Una transformación puede producir candidatos. Solo son soluciones los que verifican la ecuación original y las condiciones iniciales."
+          ]
+        ],
+        "example_title": "Una ecuación que termina sin solución",
+        "example": "En log₄(x − 1) = 1/2 + log₄(x), la condición inicial exige x > 1. La transformación conduce a x = −1, que no cumple la condición. Por lo tanto, Sol = ∅.",
+        "micro": {
+          "q": "Para log₄(x + 1) = 1/2 + log₄(x), ¿cuál es la condición inicial conjunta?",
+          "opts": [
+            "x > −1",
+            "x > 0",
+            "x ≠ 0"
+          ],
+          "correct": 1,
+          "good": "Correcto. Deben ser positivos x + 1 y x; la intersección es x > 0.",
+          "bad": "Escribí una desigualdad por cada argumento y calculá la intersección."
+        }
+      },
+      {
+        "id": "e-aplicaciones",
+        "num": "04",
+        "icon": "ƒ",
+        "title": "Aplicaciones y expresiones racionales",
+        "question": "¿Qué estructura conviene reconocer antes de elegir un método?",
+        "chips": [
+          "producto cero",
+          "fracciones algebraicas",
+          "modelos"
+        ],
+        "summary": "Las ecuaciones modelan situaciones y también aparecen en operaciones con expresiones racionales. Reconocer productos, denominadores y dependencias evita aplicar un procedimiento fuera de contexto.",
+        "concepts": [
+          [
+            "Producto cero",
+            "Si un producto es cero, al menos uno de sus factores debe ser cero. Esta propiedad permite resolver ecuaciones factorizadas."
+          ],
+          [
+            "Expresiones racionales",
+            "Son cocientes de polinomios. Para sumar o restar se busca un denominador común; para multiplicar y dividir se usan las propiedades de fracciones."
+          ],
+          [
+            "Modelización",
+            "El material usa un crecimiento exponencial de una población de aves para conectar datos, ecuación y evaluación del modelo."
+          ],
+          [
+            "Decisión de método",
+            "No todas las ecuaciones se resuelven igual: primero se identifica la estructura y luego se elige una transformación válida."
+          ]
+        ],
+        "example_title": "Ecuación factorizada",
+        "example": "(x − 5)(x/2 + 3) = 0 implica x − 5 = 0 o x/2 + 3 = 0. Las soluciones son x = 5 y x = −6.",
+        "micro": {
+          "q": "¿Qué condición inicial tiene (x + 1)(x − 1)/(x − 1) = 0?",
+          "opts": [
+            "x ≠ −1",
+            "x ≠ 1",
+            "No tiene restricciones"
+          ],
+          "correct": 1,
+          "good": "Exacto. Aunque el factor se simplifique, x = 1 estaba excluido desde la expresión original.",
+          "bad": "La condición inicial se calcula antes de cancelar factores: el denominador no puede ser cero."
+        }
+      }
+    ],
+    "map_svg": "mapa-ecuaciones.svg",
+    "local_video": "02_ecuaciones_condiciones_iniciales.mp4",
+    "vtt": "02_ecuaciones.vtt",
+    "local_video_title": "Resolver una ecuación racional sin borrar la condición inicial",
+    "local_video_desc": "Microvideo creado para resolver (x + 1)(x − 1)/(x − 1) = 0 y mostrar por qué x = 1 sigue excluido.",
+    "originals": [
+      [
+        "Video de la cátedra: ecuación logarítmica",
+        "https://drive.google.com/file/d/1J6zoRrojHOljPisLzEb8mrmQLPprUYn4/preview",
+        "https://drive.google.com/file/d/1J6zoRrojHOljPisLzEb8mrmQLPprUYn4/view?usp=sharing",
+        "Resolución de log₄(x − 1) = 1/2 + log₄(x), enlazada desde el apunte para el taller."
+      ]
+    ],
+    "pause_questions": [
+      "¿Cada paso mantiene el mismo conjunto solución?",
+      "¿Qué condición inicial podría desaparecer al simplificar?",
+      "¿Podrías verificar el resultado en la ecuación original?",
+      "¿El método elegido responde a la estructura o a una costumbre?"
+    ],
+    "sources": [
+      "Lucas Colipe. Presentación de la segunda semana: ecuaciones, Matemática 1, FaCiAS, UNCo, 2025.",
+      "Morari, Colipe. Conjuntos Numéricos - Números Reales. Sección Ecuaciones, Matemática 1, FaCiAS, UNCo, 2025.",
+      "Resumen y Ejemplos - Reales. Apunte para el taller, Matemática 1, FaCiAS, UNCo, 2024.",
+      "Trabajo Práctico: Números Reales, Matemática 1, FaCiAS, UNCo, primer cuatrimestre 2024.",
+      "Soluciones del Trabajo Práctico de Reales, Matemática 1, FaCiAS, UNCo, segundo cuatrimestre 2023."
+    ],
+    "documents": [
+      [
+        "Presentación: ecuaciones",
+        "../assets/documentos/presentacion_ecuaciones.pdf"
+      ],
+      [
+        "Teoría completa",
+        "../assets/documentos/teoria_reales.pdf"
+      ],
+      [
+        "Resumen para el taller",
+        "../assets/documentos/resumen_taller.pdf"
+      ],
+      [
+        "Trabajo práctico",
+        "../assets/documentos/trabajo_practico_reales.pdf"
+      ],
+      [
+        "Resoluciones 2023",
+        "../assets/documentos/resoluciones_tp_2023.pdf"
+      ]
+    ]
+  },
+  "inecuaciones": {
+    "titulo": "Pensar en regiones",
+    "subtitulo": "Inecuaciones, intervalos, condiciones de existencia y valor absoluto",
+    "etiqueta": "Cápsula 3 · Inecuaciones y valor absoluto",
+    "intro": "Un recorrido para pasar de una comparación algebraica a una región de la recta real, combinar intervalos, analizar signos y reinterpretar el valor absoluto como distancia.",
+    "pregunta": "¿Cómo se transforma una desigualdad en un conjunto de puntos de la recta sin perder el sentido del orden?",
+    "hero": "hero-inecuaciones.svg",
+    "objetivos": [
+      [
+        "Comparar",
+        "Usar monotonía de suma y producto para obtener inecuaciones equivalentes."
+      ],
+      [
+        "Representar",
+        "Traducir entre desigualdad, intervalo y gráfico en la recta."
+      ],
+      [
+        "Analizar signos",
+        "Resolver productos, cocientes y condiciones de existencia."
+      ],
+      [
+        "Interpretar distancias",
+        "Usar valor absoluto para describir regiones centradas o exteriores."
+      ]
+    ],
+    "frase": "Una solución de inecuación no suele ser un número aislado: es una región que debe leerse algebraica y geométricamente.",
+    "mapa_intro": "Los nodos conectan la transformación algebraica con la representación en intervalos. El valor absoluto funciona como puente entre desigualdad y distancia.",
+    "nodes": [
+      {
+        "id": "i-monotonia",
+        "num": "01",
+        "icon": "<",
+        "title": "Comparar y conservar el sentido",
+        "question": "¿Cuándo una operación mantiene o invierte la desigualdad?",
+        "chips": [
+          "monotonía",
+          "signo",
+          "inecuaciones equivalentes"
+        ],
+        "summary": "Sumar el mismo real a ambos miembros conserva el sentido. Multiplicar por un número positivo también lo conserva; multiplicar por un número negativo invierte la desigualdad.",
+        "concepts": [
+          [
+            "Componentes",
+            "Miembro izquierdo, símbolo de desigualdad y miembro derecho."
+          ],
+          [
+            "Monotonía de la suma",
+            "Si a < b, entonces a + c < b + c para todo real c."
+          ],
+          [
+            "Monotonía del producto",
+            "Si c > 0, el sentido se conserva; si c < 0, se invierte."
+          ],
+          [
+            "Conjunto solución",
+            "Puede ser un intervalo, una unión de intervalos, ℝ o ∅."
+          ]
+        ],
+        "example_title": "El signo no es un detalle",
+        "example": "De −x < 4 se multiplica por −1 y se invierte la desigualdad: x > −4. No invertirla cambiaría el conjunto solución.",
+        "micro": {
+          "q": "Al multiplicar −3x ≥ 6 por −1/3, ¿qué resulta?",
+          "opts": [
+            "x ≥ −2",
+            "x ≤ −2",
+            "x ≥ 2"
+          ],
+          "correct": 1,
+          "good": "Correcto. El factor es negativo, por eso la desigualdad cambia de sentido.",
+          "bad": "Además de dividir por 3, observá el signo del número por el que multiplicás."
+        }
+      },
+      {
+        "id": "i-intervalos",
+        "num": "02",
+        "icon": "[ ]",
+        "title": "Intervalos y operaciones",
+        "question": "¿Qué información guardan los paréntesis y los corchetes?",
+        "chips": [
+          "abiertos y cerrados",
+          "unión",
+          "intersección"
+        ],
+        "summary": "La notación de intervalos condensa una región de la recta. Los corchetes incluyen el extremo; los paréntesis lo excluyen. Unión e intersección permiten combinar condiciones.",
+        "concepts": [
+          [
+            "Intervalos acotados",
+            "(a,b), (a,b], [a,b) y [a,b] se distinguen por la inclusión de los extremos."
+          ],
+          [
+            "Intervalos no acotados",
+            "Con ±∞ siempre se usan paréntesis, porque infinito no es un número real alcanzable."
+          ],
+          [
+            "Unión",
+            "Reúne los elementos que pertenecen a uno u otro conjunto."
+          ],
+          [
+            "Intersección",
+            "Conserva únicamente los elementos comunes; representa el “y” entre condiciones."
+          ]
+        ],
+        "example_title": "Una intersección del Trabajo Práctico",
+        "example": "[2,7] ∩ (5,9] contiene los números mayores que 5 y, al mismo tiempo, no mayores que 7. El resultado es (5,7].",
+        "micro": {
+          "q": "¿Cuál es [−7,3] ∩ [3,5)?",
+          "opts": [
+            "∅",
+            "{3}",
+            "[−7,5)"
+          ],
+          "correct": 1,
+          "good": "Exacto. El único punto común es 3, incluido en ambos intervalos.",
+          "bad": "Mirá qué puntos pertenecen simultáneamente a los dos conjuntos y revisá los extremos."
+        }
+      },
+      {
+        "id": "i-signos",
+        "num": "03",
+        "icon": "±",
+        "title": "Signos y condiciones de existencia",
+        "question": "¿Cómo decidir el signo de un producto o cociente sin probar números al azar?",
+        "chips": [
+          "producto",
+          "cociente",
+          "hacer real"
+        ],
+        "summary": "Las propiedades de signos transforman una inecuación de producto o cociente en combinaciones de condiciones. Antes de resolver, los denominadores, logaritmos y raíces pares imponen restricciones.",
+        "concepts": [
+          [
+            "Producto positivo",
+            "Los factores tienen el mismo signo; para producto negativo, signos opuestos."
+          ],
+          [
+            "Cociente",
+            "Se usa el mismo análisis, pero el denominador nunca puede ser cero."
+          ],
+          [
+            "Condiciones para que sea real",
+            "Denominador ≠ 0, argumento logarítmico > 0 y radicando de raíz par ≥ 0."
+          ],
+          [
+            "Lectura por intervalos",
+            "Cada condición produce un intervalo; las conjunciones se intersectan y las alternativas se unen."
+          ]
+        ],
+        "example_title": "Cociente racional",
+        "example": "(x − 3)/(4 − x) > 0 exige numerador y denominador del mismo signo, con x ≠ 4. El único caso posible es 3 < x < 4.",
+        "micro": {
+          "q": "¿Cuál es la solución de (x − 4)(x + 3) > 0?",
+          "opts": [
+            "(−3,4)",
+            "(−∞,−3) ∪ (4,∞)",
+            "[−3,4]"
+          ],
+          "correct": 1,
+          "good": "Bien. El producto es positivo cuando los dos factores tienen el mismo signo.",
+          "bad": "Separá los casos “ambos positivos” y “ambos negativos” y uní los intervalos."
+        }
+      },
+      {
+        "id": "i-valor",
+        "num": "04",
+        "icon": "|x|",
+        "title": "Valor absoluto como distancia",
+        "question": "¿Qué región describe estar cerca o lejos de un punto?",
+        "chips": [
+          "distancia",
+          "intervalos centrados",
+          "propiedades"
+        ],
+        "summary": "El valor absoluto de x es su distancia al origen. Más generalmente, |x − c| es la distancia entre x y c. Las desigualdades con valor absoluto describen regiones interiores o exteriores respecto de un centro.",
+        "concepts": [
+          [
+            "Definición",
+            "|x| = x si x ≥ 0 y |x| = −x si x < 0."
+          ],
+          [
+            "Distancia",
+            "d(x,y) = |x − y|. Por eso |x − c| ≤ r describe puntos a distancia no mayor que r de c."
+          ],
+          [
+            "Propiedad del menor",
+            "|x| ≤ d equivale a −d ≤ x ≤ d; produce un intervalo centrado."
+          ],
+          [
+            "Propiedad del mayor",
+            "|x| ≥ d produce dos regiones exteriores: x ≤ −d o x ≥ d."
+          ]
+        ],
+        "example_title": "Interpretación geométrica",
+        "example": "|x − 5| < 2 significa “la distancia de x a 5 es menor que 2”. Por lo tanto, 3 < x < 7.",
+        "micro": {
+          "q": "¿Qué conjunto describe |x + 2| ≤ 5?",
+          "opts": [
+            "[−7,3]",
+            "[−3,7]",
+            "(−∞,−7] ∪ [3,∞)"
+          ],
+          "correct": 0,
+          "good": "Correcto. La expresión mide la distancia a −2: cinco unidades a cada lado dan [−7,3].",
+          "bad": "Reescribí |x + 2| como |x − (−2)| y buscá los extremos a distancia 5."
+        }
+      }
+    ],
+    "map_svg": "mapa-inecuaciones.svg",
+    "local_video": "03_inecuaciones_intervalos_valor_absoluto.mp4",
+    "vtt": "03_inecuaciones.vtt",
+    "local_video_title": "Del signo al intervalo y del intervalo a la distancia",
+    "local_video_desc": "Microvideo creado para resolver −2x < 6 y conectar |x − 2| ≤ 4 con el intervalo [−2,6].",
+    "originals": [
+      [
+        "Video de la cátedra: inecuación racional",
+        "https://drive.google.com/file/d/1qpS1BXCE1D4TsxADaOqsa6yC3PA_rM1R/preview",
+        "https://drive.google.com/file/d/1qpS1BXCE1D4TsxADaOqsa6yC3PA_rM1R/view?usp=sharing",
+        "Resolución de una inecuación racional, enlazada desde el apunte para el taller."
+      ],
+      [
+        "Video de la cátedra: valor absoluto",
+        "https://drive.google.com/file/d/1-5NMVeHSoZGTkdj41sOg-e-tiCLWv3uT/preview",
+        "https://drive.google.com/file/d/1-5NMVeHSoZGTkdj41sOg-e-tiCLWv3uT/view?usp=sharing",
+        "Resolución de una inecuación con valor absoluto, enlazada desde el apunte para el taller."
+      ]
+    ],
+    "pause_questions": [
+      "¿En qué paso podría cambiar el sentido de la desigualdad?",
+      "¿La respuesta está expresada como región, intervalo y gráfico?",
+      "¿La condición usa “y” —intersección— o “o” —unión—?",
+      "¿Podrías interpretar el resultado como una distancia?"
+    ],
+    "sources": [
+      "Basanta, Nayen. Presentación de la tercera semana: inecuaciones y valor absoluto, Matemática 1, FaCiAS, UNCo, 2025.",
+      "Morari, Colipe. Conjuntos Numéricos - Números Reales. Secciones Inecuaciones y Valor absoluto, Matemática 1, FaCiAS, UNCo, 2025.",
+      "Resumen y Ejemplos - Reales. Apunte para el taller, Matemática 1, FaCiAS, UNCo, 2024.",
+      "Trabajo Práctico: Números Reales, Matemática 1, FaCiAS, UNCo, primer cuatrimestre 2024.",
+      "Soluciones del Trabajo Práctico de Reales, Matemática 1, FaCiAS, UNCo, segundo cuatrimestre 2023."
+    ],
+    "documents": [
+      [
+        "Presentación: inecuaciones",
+        "../assets/documentos/presentacion_inecuaciones.pdf"
+      ],
+      [
+        "Teoría completa",
+        "../assets/documentos/teoria_reales.pdf"
+      ],
+      [
+        "Resumen para el taller",
+        "../assets/documentos/resumen_taller.pdf"
+      ],
+      [
+        "Trabajo práctico",
+        "../assets/documentos/trabajo_practico_reales.pdf"
+      ],
+      [
+        "Resoluciones 2023",
+        "../assets/documentos/resoluciones_tp_2023.pdf"
+      ]
+    ]
+  }
+}
