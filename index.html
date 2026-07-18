@@ -8,6 +8,30 @@
   <title>Matemática 1 | Tres cápsulas de apoyo</title>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- MATHJAX: permite escribir fórmulas con \(...\) y \[...\] -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']],
+        processEscapes: true,
+        macros: {
+          R: '\\mathbb{R}',
+          Q: '\\mathbb{Q}',
+          Z: '\\mathbb{Z}',
+          N: '\\mathbb{N}',
+          sen: '\\operatorname{sen}'
+        }
+      },
+      svg: { fontCache: 'global' },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
 </head>
 <body data-page="portal">
 <a class="saltar-contenido" href="#contenido-principal">Saltar al contenido</a>
