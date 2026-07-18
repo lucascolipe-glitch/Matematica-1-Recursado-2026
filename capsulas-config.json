@@ -34,7 +34,7 @@
         "title": "Familias que se amplían",
         "question": "¿Qué problema resuelve cada ampliación del sistema numérico?",
         "chips": [
-          "ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ",
+          "\\(\\mathbb{N}\\subset\\mathbb{Z}\\subset\\mathbb{Q}\\subset\\mathbb{R}\\)",
           "irracionales",
           "clausura"
         ],
@@ -42,11 +42,11 @@
         "concepts": [
           [
             "Naturales y enteros",
-            "En la convención usada por la cátedra, ℕ = {1, 2, 3, …}. Los enteros incorporan el cero y los opuestos de los naturales."
+            "En la convención usada por la cátedra, \\(\\mathbb{N}=\\{1,2,3,\\ldots\\}\\). Los enteros incorporan el cero y los opuestos de los naturales."
           ],
           [
             "Racionales",
-            "Son cocientes a/b con a y b enteros y b ≠ 0. Incluyen enteros, decimales finitos y decimales periódicos."
+            "Son cocientes \\(\\frac{a}{b}\\) con a y b enteros y \\(b\\ne0\\). Incluyen enteros, decimales finitos y decimales periódicos."
           ],
           [
             "Irracionales y reales",
@@ -58,9 +58,9 @@
           ]
         ],
         "example_title": "Lectura guiada",
-        "example": "√9 = 3. El número 3 pertenece a ℕ, por lo tanto también pertenece a ℤ, ℚ y ℝ. La clasificación más específica es “natural”.",
+        "example": "\\(\\sqrt{9}=3\\). El número 3 pertenece a ℕ, por lo tanto también pertenece a ℤ, ℚ y ℝ. La clasificación más específica es “natural”.",
         "micro": {
-          "q": "¿Cuál es el conjunto más pequeño al que pertenece −5?",
+          "q": "¿Cuál es el conjunto más pequeño al que pertenece \\(-5\\)?",
           "opts": [
             "ℕ",
             "ℤ",
@@ -68,7 +68,7 @@
             "ℝ"
           ],
           "correct": 1,
-          "good": "Exacto. −5 es entero; además es racional y real, pero la clasificación más específica es ℤ.",
+          "good": "Exacto. \\(-5\\) es entero; además es racional y real, pero la clasificación más específica es ℤ.",
           "bad": "Revisá la inclusión entre conjuntos: los enteros incluyen los naturales, sus opuestos y el cero."
         }
       },
@@ -119,19 +119,19 @@
       {
         "id": "r-potencias",
         "num": "03",
-        "icon": "aⁿ",
+        "icon": "\\(a^n\\)",
         "title": "Potencias, raíces y exponentes fraccionarios",
         "question": "¿Cuándo dos escrituras distintas describen la misma operación?",
         "chips": [
           "exponentes enteros",
           "radicación",
-          "aⁿᐟᵐ"
+          "\\(a^n\\)ᐟᵐ"
         ],
         "summary": "La potencia se extiende a exponentes enteros mediante el inverso multiplicativo. La radicación depende de la paridad del índice y las potencias de exponente fraccionario conectan ambas operaciones.",
         "concepts": [
           [
             "Potenciación",
-            "Para n natural, aⁿ es el producto de n factores iguales. Para a ≠ 0, a⁰ = 1 y a⁻ⁿ = 1/aⁿ."
+            "Para n natural, \\(a^n\\) es el producto de n factores iguales. Para \\(a\\ne0\\), \\(a^0=1\\) y a⁻ⁿ = 1/\\(a^n\\)."
           ],
           [
             "Propiedades",
@@ -143,20 +143,20 @@
           ],
           [
             "Exponente fraccionario",
-            "Para a positivo, aⁿᐟᵐ = ᵐ√(aⁿ). Esta equivalencia permite cambiar de registro según convenga."
+            "Para a positivo, \\(a^n\\)ᐟᵐ = ᵐ√(\\(a^n\\)). Esta equivalencia permite cambiar de registro según convenga."
           ]
         ],
         "example_title": "Una alerta conceptual",
-        "example": "√(x²) no es siempre x. Como la raíz cuadrada principal es no negativa, √(x²) = |x|. Por ejemplo, si x = −3, √(x²) = 3.",
+        "example": "\\(\\sqrt{x^2}\\) no es siempre x. Como la raíz cuadrada principal es no negativa, \\(\\sqrt{x^2}\\) = \\(|x|\\). Por ejemplo, si x = −3, \\(\\sqrt{x^2}\\) = 3.",
         "micro": {
-          "q": "¿Cuál es el valor de (1/2)⁻²?",
+          "q": "¿Cuál es el valor de \\(\\left(\\frac12\\right)^{-2}\\)?",
           "opts": [
             "1/4",
             "4",
             "−4"
           ],
           "correct": 1,
-          "good": "Correcto. El exponente negativo invierte la base: (1/2)⁻² = 2² = 4.",
+          "good": "Correcto. El exponente negativo invierte la base: \\(\\left(\\frac12\\right)^{-2}\\) = 2² = 4.",
           "bad": "Primero aplicá el inverso multiplicativo y después elevá al cuadrado."
         }
       },
@@ -175,7 +175,7 @@
         "concepts": [
           [
             "Definición",
-            "logₐ(c) = b si y solo si aᵇ = c, con a > 0, a ≠ 1 y c > 0."
+            "\\(\\log_a(c)=b\\) si y solo si \\(a^b=c\\), con a > 0, a ≠ 1 y c > 0."
           ],
           [
             "Propiedades",
@@ -193,7 +193,7 @@
         "example_title": "Propiedad que no existe",
         "example": "No se puede transformar logₐ(b + c) en logₐ(b) + logₐ(c). Las propiedades listadas en los materiales se aplican a producto, cociente y potencia.",
         "micro": {
-          "q": "Si log₅(1/25) = b, ¿cuánto vale b?",
+          "q": "Si \\(\\log_5(\\frac{1}{25})=b\\), ¿cuánto vale b?",
           "opts": [
             "2",
             "−2",
@@ -308,7 +308,7 @@
         "example_title": "Tres posibles finales",
         "example": "Una igualdad falsa produce Sol = ∅; una igualdad verdadera independiente de x produce Sol = ℝ, salvo las condiciones iniciales; una igualdad que determina x produce un conjunto finito de soluciones.",
         "micro": {
-          "q": "¿Por qué 2x + 1 = 0 y 4x + 2 = 0 son equivalentes?",
+          "q": "¿Por qué \\(2x+1=0\\) y \\(4x+2=0\\) son equivalentes?",
           "opts": [
             "Porque se parecen",
             "Porque ambas tienen solución x = −1/2",
@@ -350,16 +350,16 @@
           ]
         ],
         "example_title": "Evitar el “pasa restando”",
-        "example": "De 3x − 4 = 2 se suma 4 a ambos miembros: 3x = 6. Luego se multiplica por 1/3 en ambos miembros: x = 2. Cada paso muestra la propiedad aplicada.",
+        "example": "De \\(3x-4=2\\) se suma 4 a ambos miembros: 3x = 6. Luego se multiplica por 1/3 en ambos miembros: \\(x=2\\). Cada paso muestra la propiedad aplicada.",
         "micro": {
           "q": "En −2(x − (5 − 4x)) + 4 = −3x, ¿cuál es la solución?",
           "opts": [
             "x = −2",
-            "x = 2",
+            "\\(x=2\\)",
             "x = 14"
           ],
           "correct": 1,
-          "good": "Bien. Al suprimir paréntesis y agrupar resulta −10x + 14 = −3x, por lo tanto x = 2.",
+          "good": "Bien. Al suprimir paréntesis y agrupar resulta −10x + 14 = −3x, por lo tanto \\(x=2\\).",
           "bad": "Primero resolvé el paréntesis interior, después aplicá distributiva y agrupá términos semejantes."
         }
       },
@@ -394,7 +394,7 @@
           ]
         ],
         "example_title": "Una ecuación que termina sin solución",
-        "example": "En log₄(x − 1) = 1/2 + log₄(x), la condición inicial exige x > 1. La transformación conduce a x = −1, que no cumple la condición. Por lo tanto, Sol = ∅.",
+        "example": "En \\(\\log_4(x-1)=\\frac12+\\log_4(x)\\), la condición inicial exige x > 1. La transformación conduce a x = −1, que no cumple la condición. Por lo tanto, Sol = ∅.",
         "micro": {
           "q": "Para log₄(x + 1) = 1/2 + log₄(x), ¿cuál es la condición inicial conjunta?",
           "opts": [
@@ -438,9 +438,9 @@
           ]
         ],
         "example_title": "Ecuación factorizada",
-        "example": "(x − 5)(x/2 + 3) = 0 implica x − 5 = 0 o x/2 + 3 = 0. Las soluciones son x = 5 y x = −6.",
+        "example": "\\((x-5)(\\frac{x}{2}+3)=0\\) implica x − 5 = 0 o x/2 + 3 = 0. Las soluciones son x = 5 y x = −6.",
         "micro": {
-          "q": "¿Qué condición inicial tiene (x + 1)(x − 1)/(x − 1) = 0?",
+          "q": "¿Qué condición inicial tiene \\(\\frac{(x+1)(x-1)}{x-1}=0\\)?",
           "opts": [
             "x ≠ −1",
             "x ≠ 1",
@@ -456,13 +456,13 @@
     "local_video": "02_ecuaciones_condiciones_iniciales.mp4",
     "vtt": "02_ecuaciones.vtt",
     "local_video_title": "Resolver una ecuación racional sin borrar la condición inicial",
-    "local_video_desc": "Microvideo creado para resolver (x + 1)(x − 1)/(x − 1) = 0 y mostrar por qué x = 1 sigue excluido.",
+    "local_video_desc": "Microvideo creado para resolver \\(\\frac{(x+1)(x-1)}{x-1}=0\\) y mostrar por qué x = 1 sigue excluido.",
     "originals": [
       [
         "Video de la cátedra: ecuación logarítmica",
         "https://drive.google.com/file/d/1J6zoRrojHOljPisLzEb8mrmQLPprUYn4/preview",
         "https://drive.google.com/file/d/1J6zoRrojHOljPisLzEb8mrmQLPprUYn4/view?usp=sharing",
-        "Resolución de log₄(x − 1) = 1/2 + log₄(x), enlazada desde el apunte para el taller."
+        "Resolución de \\(\\log_4(x-1)=\\frac12+\\log_4(x)\\), enlazada desde el apunte para el taller."
       ]
     ],
     "pause_questions": [
@@ -548,7 +548,7 @@
           ],
           [
             "Monotonía de la suma",
-            "Si a < b, entonces a + c < b + c para todo real c."
+            "Si \\(a<b\\), entonces \\(a+c<b+c\\) para todo real c."
           ],
           [
             "Monotonía del producto",
@@ -562,7 +562,7 @@
         "example_title": "El signo no es un detalle",
         "example": "De −x < 4 se multiplica por −1 y se invierte la desigualdad: x > −4. No invertirla cambiaría el conjunto solución.",
         "micro": {
-          "q": "Al multiplicar −3x ≥ 6 por −1/3, ¿qué resulta?",
+          "q": "Al multiplicar \\(-3x\\ge6\\) por \\(-\\frac13\\), ¿qué resulta?",
           "opts": [
             "x ≥ −2",
             "x ≤ −2",
@@ -650,7 +650,7 @@
         "example_title": "Cociente racional",
         "example": "(x − 3)/(4 − x) > 0 exige numerador y denominador del mismo signo, con x ≠ 4. El único caso posible es 3 < x < 4.",
         "micro": {
-          "q": "¿Cuál es la solución de (x − 4)(x + 3) > 0?",
+          "q": "¿Cuál es la solución de \\((x-4)(x+3)>0\\)?",
           "opts": [
             "(−3,4)",
             "(−∞,−3) ∪ (4,∞)",
@@ -664,7 +664,7 @@
       {
         "id": "i-valor",
         "num": "04",
-        "icon": "|x|",
+        "icon": "\\(|x|\\)",
         "title": "Valor absoluto como distancia",
         "question": "¿Qué región describe estar cerca o lejos de un punto?",
         "chips": [
@@ -676,7 +676,7 @@
         "concepts": [
           [
             "Definición",
-            "|x| = x si x ≥ 0 y |x| = −x si x < 0."
+            "\\(|x|\\) = x si x ≥ 0 y \\(|x|\\) = −x si x < 0."
           ],
           [
             "Distancia",
@@ -684,17 +684,17 @@
           ],
           [
             "Propiedad del menor",
-            "|x| ≤ d equivale a −d ≤ x ≤ d; produce un intervalo centrado."
+            "\\(|x|\\) ≤ d equivale a −d ≤ x ≤ d; produce un intervalo centrado."
           ],
           [
             "Propiedad del mayor",
-            "|x| ≥ d produce dos regiones exteriores: x ≤ −d o x ≥ d."
+            "\\(|x|\\) ≥ d produce dos regiones exteriores: x ≤ −d o x ≥ d."
           ]
         ],
         "example_title": "Interpretación geométrica",
         "example": "|x − 5| < 2 significa “la distancia de x a 5 es menor que 2”. Por lo tanto, 3 < x < 7.",
         "micro": {
-          "q": "¿Qué conjunto describe |x + 2| ≤ 5?",
+          "q": "¿Qué conjunto describe \\(|x+2|\\le5\\)?",
           "opts": [
             "[−7,3]",
             "[−3,7]",
