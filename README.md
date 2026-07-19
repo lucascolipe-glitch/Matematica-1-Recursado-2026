@@ -15,6 +15,8 @@ Proyecto estático en HTML, CSS y JavaScript, listo para abrir localmente o publ
 - `assets/video/`: tres microvideos creados para las cápsulas y subtítulos `.vtt`.
 - `assets/documentos/`: materiales de la cátedra utilizados como fuente.
 
+El proyecto no necesita archivos `.json`: los casos interactivos se encuentran en `js/app.js` y los contenidos teóricos en los HTML.
+
 ## Abrir y comprobar
 
 1. Descomprimí el proyecto.
@@ -33,6 +35,21 @@ python3 -m http.server 8000
 ```
 
 Luego abrí `http://localhost:8000`.
+
+
+## Actualizar una versión ya publicada
+
+Los HTML incluyen una versión en las rutas de `estilos.css` y `app.js` para evitar que el navegador conserve archivos viejos en caché. Después de subir los cambios a GitHub Pages:
+
+1. esperá a que finalice el despliegue;
+2. recargá la página con `Ctrl + F5`;
+3. si todavía aparece la versión anterior, abrila en una ventana privada.
+
+## Comportamiento responsive del portal
+
+- En computadora se conserva la portada en dos columnas y las tres cápsulas aparecen en una misma fila.
+- En tablet, las tarjetas se distribuyen en dos columnas y la tercera ocupa el ancho completo.
+- En celular, la portada, las tarjetas, las orientaciones y los botones pasan a una sola columna.
 
 ## Publicar en GitHub Pages
 
@@ -123,10 +140,10 @@ El proyecto fue elaborado con asistencia de IA generativa para organizar los con
 
 ## Fórmulas matemáticas con MathJax
 
-Las cuatro páginas HTML cargan MathJax desde un CDN. Las fórmulas en línea se escriben entre `\\(` y `\\)`, por ejemplo:
+Las tres páginas de las cápsulas cargan MathJax desde un CDN. El portal `index.html` no lo carga porque no contiene fórmulas, lo que acelera la portada. Las fórmulas en línea se escriben entre `\(` y `\)`, por ejemplo:
 
 ```html
-<p>La propiedad es \\(a(b+c)=ab+ac\\).</p>
+<p>La propiedad es \(a(b+c)=ab+ac\).</p>
 ```
 
-Las fórmulas centradas se escriben entre `\\[` y `\\]`. Cuando JavaScript cambia un caso o una devolución, `js/app.js` vuelve a ejecutar MathJax automáticamente. Para ver las fórmulas al abrir los archivos localmente hace falta conexión a Internet; una vez publicado en GitHub Pages funciona del mismo modo.
+Las fórmulas centradas se escriben entre `\[` y `\]`. Cuando JavaScript cambia un caso o una devolución, `js/app.js` vuelve a ejecutar MathJax automáticamente. Para ver las fórmulas al abrir los archivos localmente hace falta conexión a Internet; una vez publicado en GitHub Pages funciona del mismo modo.
